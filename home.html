@@ -54,10 +54,9 @@
                      btm.innerText = "menu";
                  }
              }
-             var $ = document.querySelector;
 
              function article_toggle(a){
-                 var more = $(a+" #more");
+                 var more = document.querySelector(a+" #more");
                  var m = document.getElementById(a);
                  if(m.style.display == 'none'  || m.style.display == '') {
                      m.style.display = 'block';
