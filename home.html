@@ -21,7 +21,7 @@
                     <div id="bt_drawer" onclick="menu_toggle();">
                         <i class="material-icons" id="menu_bt">menu</i>
                     </div>
-                    <a href="https://doc0160.github.io/Party-Junie-Archive/">
+                    <a href="/Party-Junie-Archive/">
                         Party Junkie
                     </a>
                 </div>
@@ -34,6 +34,7 @@
                          onclick="article_toggle('article-{{$index}}')">
                         More<i class="material-icons">expand_more</i>
                     </div>
+                    <a href="/Party-Junie-Archive/{{$index}}.html">#</a>
                     <div class="article" id="article-{{$index}}">
                         {{$element.Article | markdown | nl2br}}
                     </div>
