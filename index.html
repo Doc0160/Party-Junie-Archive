@@ -70,10 +70,10 @@
                      btm.innerText = "menu";
                  }
              }
-             var $ = document.querySelectorAll;
+             var $ = document.querySelector;
 
              function article_toggle(a){
-                 var more = document.getElementById("more");
+                 var more = $(a+" #more");
                  var m = document.getElementById(a);
                  if(m.style.display == 'none'  || m.style.display == '') {
                      m.style.display = 'block';
