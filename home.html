@@ -19,7 +19,7 @@
             <div id ="page">
                 <div id="header">
                     <div id="bt_drawer" onclick="menu_toggle();">
-                        <i class="material-icons">menu</i>
+                        <i class="material-icons" id="menu_bt">menu</i>
                     </div>
                     <a href="https://doc0160.github.io/Party-Junie-Archive/">
                         Party Junkie
@@ -44,11 +44,14 @@
             </div>
             <script>
              function menu_toggle(){
+                 var btm = document.getElementById('menu_bt');
                  var m = document.getElementById('menu');
                  if(m.style.display == 'none' || m.style.display == '') {
                      m.style.display = 'flex';
+                     btm.innerText = "close";
                  } else {
                      m.style.display = 'none';
+                     btm.innerText = "menu";
                  }
              }
 

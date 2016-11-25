@@ -39,11 +39,14 @@
                 </div>
                 <script>
                  function menu_toggle(){
+                     var btm = document.getElementById('menu_bt');
                      var m = document.getElementById('menu');
                      if(m.style.display == 'none' || m.style.display == '') {
                          m.style.display = 'flex';
+                         btm.innerText = "close";
                      } else {
                          m.style.display = 'none';
+                         btm.innerText = "menu";
                      }
                  }
                 </script>
