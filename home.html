@@ -29,7 +29,7 @@
                 {{range $index, $element := .Entries}}
                 <div class="item" id="{{$index}}" >
                     <div class="title">{{$element.Title}}</div>
-                    <div class="description">{{$element.Description | markdown}}</div>
+                    <div class="description">{{$element.Description | markdown | nl2br}}</div>
                     <div class="more"
                          onclick="article_toggle('article-{{$index}}')">
                         More<i class="material-icons" id="more">expand_more</i>
