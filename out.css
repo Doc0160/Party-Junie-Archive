@@ -20,14 +20,13 @@ body {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
     flex:1;
+    height: 55px;
 }
 
 #header #bt_drawer {
     border-radius: 100%;
-    width: 5vh;
-    height: 5vh;
-    max-width: 150px;
-    max-height: 150px;
+    width: 48px;
+    height: 48px;
     background: #F8BBD0;
     margin: 10px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
@@ -43,14 +42,8 @@ body {
 #header #bt_drawer :hover {
     /box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     border-radius: 100%;
-    width: 5vh;
-    height: 5vh;
-    
-    min-height: 50px;
-    min-width: 50px;
-    
-    max-height: 150px;
-    max-width: 150px;
+    width: 48px;
+    height: 48px;
     
     display: flex;
     flex-direction: column;
@@ -62,10 +55,10 @@ body {
 #header #bt_drawer :active {
     display: block;
     border-radius: 100%;
-    width: 5vh;
-    height: 5vh;
-    max-width: 150px;
-    max-height: 150px;
+
+    width: 48px;
+    height: 48px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
