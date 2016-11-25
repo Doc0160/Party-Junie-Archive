@@ -32,7 +32,7 @@
                     <div class="description">{{$element.Description | markdown | nl2br}}</div>
                     <div class="more"
                          onclick="article_toggle('article-{{$index}}')">
-                        More<i class="material-icons" id="more">expand_more</i>
+                        More<i class="material-icons">expand_more</i>
                     </div>
                     <div class="article" id="article-{{$index}}">
                         {{$element.Article | markdown | nl2br}}
@@ -56,7 +56,10 @@
              }
 
              function article_toggle(a){
-                 var more = document.querySelector("#"+a).parentNode.querySelector(".more");
+                 var more = document.querySelector("#"+a).
+                                     parentNode.
+                                     querySelector(".more").
+                                     querySelector(".material-icons");
                  var m = document.getElementById(a);
                  if(m.style.display == 'none'  || m.style.display == '') {
                      m.style.display = 'block';
