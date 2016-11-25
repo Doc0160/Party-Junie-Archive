@@ -1,0 +1,150 @@
+body {
+    margin:0;
+    padding:0;
+    background: {{index . 1}};
+    color: #FFFFFF;
+    font-family: Roboto, sans-serif;
+}
+
+#twosider {
+    display:flex;
+}
+#twosider #page {
+    width: 100%
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    background: {{index . 0}};
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    flex:1;
+}
+
+#header #bt_drawer {
+    border-radius: 100%;
+    width: 5vh;
+    height: 5vh;
+    max-width: 150px;
+    max-height: 150px;
+    background: {{index . 2}};
+    margin: 10px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: {{index . 0}};
+    cursor: pointer;
+    user-select: none;
+}
+
+#header #bt_drawer :hover {
+    /box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 100%;
+    width: 5vh;
+    height: 5vh;
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: {{index . 3}};
+}
+
+#header #bt_drawer :active {
+    display: block;
+    border-radius: 100%;
+    width: 5vh;
+    height: 5vh;
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background: {{index . 1}};
+    color: {{index . 2}};
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+    width: 150px;
+    background: {{index . 10}};
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+#menu a {
+    vertical-align: middle;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu .item {
+    min-height: 30px;
+}
+
+#menu .item:hover {
+    background: {{index . 8}};
+}
+
+@media all and (max-width: 800px) {
+    #content{
+        width: 90vw;
+    }
+}
+@media all and (min-width: 800px) {
+    #content{
+        width: 75vw;
+    }
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+#content .item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: {{index . 3}};
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+#content .item :hover {
+    /box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#content .item .article {
+    display: none;
+}
+#content .item .description {
+    flex: 1;
+}
+
+#content .item .title {
+    background: {{index . 4}};
+}
+
+#content .item .more {
+    cursor: pointer;
+    display:flex;
+    justify-content: center;
+    user-select: none;
+}
