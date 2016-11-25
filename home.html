@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PJ - Home</title>
+        <link rel="stylesheet" type="text/css" href="out.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="twosider">
+            <div id="menu">
+                {{range $index, $element := .Entries}}
+                <div class="item">
+                    <a href="#{{$index}}">{{$element.Title}}</a>
+                </div>
+                {{end}}
+            </div>
+            <div id ="page">
+                <div id="header">
+                    <div id="bt_drawer" onclick="menu_toggle();">
+                        <i class="material-icons">menu</i>
+                    </div>
+                    Party Junkie
+                </div>
+            <div id="content">
+                {{range $index, $element := .Entries}}
+                <div class="item" id="{{$index}}" >
+                    <div class="title">{{$element.Title}}</div>
+                    <div class="description">{{$element.Description | markdown}}</div>
+                    <div class="more"
+                         onclick="article_toggle('article-{{$index}}')">More<i class="material-icons">expand_more</i>
+                    </div>
+                    <div class="article" id="article-{{$index}}">
+                        {{$element.Article | markdown | nl2br}}
+                    </div>
+                </div>
+                {{end}}
+                <div>
+                </div>
+            </div>
+            <script>
+             function menu_toggle(){
+                 var m = document.getElementById('menu');
+                 if(m.style.display == 'none' || m.style.display == '') {
+                     m.style.display = 'flex';
+                 } else {
+                     m.style.display = 'none';
+                 }
+             }
+
+             function article_toggle(a){
+                 var m = document.getElementById(a);
+                 if(m.style.display == 'none'  || m.style.display == '') {
+                     m.style.display = 'block';
+                 } else {
+                     m.style.display = 'none';
+                 }
+                 
+             }
+            </script>
+    </body>
+
+</html> 
