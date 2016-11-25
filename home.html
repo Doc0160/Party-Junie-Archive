@@ -57,6 +57,7 @@
 
              function article_toggle(a){
                  var more = document.querySelector(a+" #more");
+                 console.log(a+" #more");
                  var m = document.getElementById(a);
                  if(m.style.display == 'none'  || m.style.display == '') {
                      m.style.display = 'block';
