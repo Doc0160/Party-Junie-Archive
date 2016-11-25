@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PJ - Home</title>
+        <link rel="stylesheet" type="text/css" href="out.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="twosider">
+            <div id="menu">
+                
+                <div class="item">
+                    <a href="/Party-Junie-Archive/#0">Party Junkie Offical</a>
+                </div>
+                
+                <div class="item">
+                    <a href="/Party-Junie-Archive/#1">Visual Studio</a>
+                </div>
+                
+            </div>
+            <div id ="page">
+                <div id="header">
+                    <div id="bt_drawer" onclick="menu_toggle();">
+                        <i class="material-icons">menu</i>
+                    </div>
+                    <a href="https://doc0160.github.io/Party-Junie-Archive/">
+                        Party Junkie
+                    </a>
+                </div>
+                <div id="content">
+                    <div class="item">
+                        <div class="title">Visual Studio</div>
+                        <div class="description">
+                            <p><a href="https://www.microsoft.com/france/visual-studio/produits/community/Default.aspx">https://www.microsoft.com/france/visual-studio/produits/community/Default.aspx</a></p>
+
+                            <br/>
+                            <pre><code>  Pour commencer à programmer en C++, il vous faut un compilateur.<br/>  Le plus simple est d'utiliser celui founit avec visual studio.<br/></code></pre><br/>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <script>
+                 function menu_toggle(){
+                     var btm = document.getElementById('menu_bt');
+                     var m = document.getElementById('menu');
+                     if(m.style.display == 'none' || m.style.display == '') {
+                         m.style.display = 'flex';
+                         btm.innerText = "close";
+                     } else {
+                         m.style.display = 'none';
+                         btm.innerText = "menu";
+                     }
+                 }
+                </script>
+    </body>
+
+</html> 
