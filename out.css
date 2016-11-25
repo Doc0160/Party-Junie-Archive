@@ -69,6 +69,12 @@ body {
     color: #F8BBD0;
 }
 
+#header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 #menu {
     display: none;
     width: 150px;
