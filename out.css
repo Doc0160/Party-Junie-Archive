@@ -45,8 +45,13 @@ body {
     border-radius: 100%;
     width: 5vh;
     height: 5vh;
-    max-width: 150px;
+    
+    min-height: 50px;
+    min-width: 50px;
+    
     max-height: 150px;
+    max-width: 150px;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
