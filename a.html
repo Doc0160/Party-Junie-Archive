@@ -7,9 +7,9 @@
     <article class="single">
         <h2><a href="a.html">Tableau de Pointeurs vs. Tableau Multidimensionel </a></h2>
 
-        <p>Dans un programme en C, supposez que j'ai un tableau de noms de couleurs
+        <p>Dans un programme en C, supposez que j'ai une lite de noms de couleurs
             de taille similaire.
-            There are two straightforward ways to construct this table.
+            Il y a deux façons simple de construire cette liste.
             La plus commune serai un tableau de <code class="highlighter-rouge">char *</code>.</p>
 
         <div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">char</span> <span class="o">*</span><span class="n">colors_ptr</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span>
@@ -36,8 +36,8 @@
         </code></pre>
         </div>
 
-        <p>The initializers are identical, and the syntax by which these tables
-            are used is the same, but the underlying data structures are very
+        <p>Les initialisations sont identiques, et la syntaxe par laquelle
+            ces listes sont utilisées est la même, but the underlying data structures are very
             different. For example, suppose I had a lookup() function that
             searches the table for a particular color.</p>
 
