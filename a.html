@@ -39,8 +39,8 @@
         <p>Les initialisations sont identiques, et la syntaxe par laquelle
             ces listes sont utilisées est la même, mais la structure
             des données en mémoire est très différente.
-            For example, suppose I had a lookup() function that
-            searches the table for a particular color.</p>
+            Par exemple, suposons que j'ai une fonction lookup()
+            qui cherche dans la liste une couleur particulére.</p>
 
         <div class="language-c highlighter-rouge"><pre class="highlight"><code><span class="kt">int</span>
 <span class="nf">lookup</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">color</span><span class="p">)</span>
@@ -61,15 +61,16 @@ colors[][7]</code> or <code class="highlighter-rouge">char *colors[]</code>. It�
 
         <h3 id="memory-layout">Memory Layout</h3>
 
-        <p>Here’s what <code class="highlighter-rouge">colors_ptr</code>, a <em>jagged array</em>, typically looks like in
-            memory.</p>
+        <p>Voice ce à quoi <code class="highlighter-rouge">colors_ptr</code>, un <em>jagged array</em> ("tableau déchiqueté), 
+            a généralement l'air en mémoire.</p>
 
         <p><img src="./img/pointertab.png" alt="" /></p>
 
         <p>The array of six pointers will point into the program’s string table,
             usually stored in a separate page. The strings aren’t in any
             particular order and will be interspersed with the program’s other
-            string constants. The type of the expression <code class="highlighter-rouge">colors_ptr[n]</code> is <code class="highlighter-rouge">char *</code>.</p>
+            string constants. 
+            The type of the expression <code class="highlighter-rouge">colors_ptr[n]</code> is <code class="highlighter-rouge">char *</code>.</p>
 
         <p>On x86-64, suppose the base of the table is in <code class="highlighter-rouge">rax</code>, the index of the
             string I want to retrieve is <code class="highlighter-rouge">rcx</code>, and I want to put the string’s
@@ -79,8 +80,8 @@ colors[][7]</code> or <code class="highlighter-rouge">char *colors[]</code>. It�
         </code></pre>
         </div>
 
-        <p>Contrast this with <code class="highlighter-rouge">colors_2d</code>: six 7-byte elements in a row. No
-            pointers or addresses. Only strings.</p>
+        <p>Contrastant avec <code class="highlighter-rouge">colors_2d</code>: six 7-byte elements à la suite.
+            Pas de pointeurs ni d'adresses. Seulement des strings.</p>
 
         <p><img src="./img/arraytab.png" alt="" /></p>
 
@@ -110,7 +111,8 @@ colors[][7]</code> or <code class="highlighter-rouge">char *colors[]</code>. It�
 
         <h3 id="relocation">Relocation</h3>
 
-        <p>There’s another factor to consider: relocation. Nearly every process
+        <p>Il y a un autre facteur à prendre en considération: relocation. 
+            Nearly every process
             running on a modern system takes advantage of a security feature
             called Address Space Layout Randomization (ASLR). The virtual address
             of code and data is randomized at process load time. For shared
@@ -119,7 +121,7 @@ colors[][7]</code> or <code class="highlighter-rouge">char *colors[]</code>. It�
             load addresses with every other library on the system, and so must be
             relocatable.</p>
 
-        <p>If the program is compiled with GCC or Clang configured for position
+        <p>Si le programmme est compilé avec GCC ou Clang configuré for position
             independent code — <code class="highlighter-rouge">-fPIC</code> (for libraries) or <code class="highlighter-rouge">-fpie</code> + <code class="highlighter-rouge">-pie</code> (for
             programs) — extra work has to be done to support <code class="highlighter-rouge">colors_ptr</code>. Those
             are all addresses in the pointer array, but the compiler doesn’t know
@@ -170,8 +172,8 @@ colors[][7]</code> or <code class="highlighter-rouge">char *colors[]</code>. It�
             between processes, but <code class="highlighter-rouge">colors_ptr</code> (and its entire page) definitely
             does not. Shucks.</p>
 
-        <p>This is one of the reasons why the Procedure Linkage Table (PLT)
-            exists. The PLT is an array of function stubs for shared library
+        <p>C'est une des raisons pour laquel the Procedure Linkage Table (PLT)
+            existe. The PLT is an array of function stubs for shared library
             functions, such as those in the C standard library. Sure, the loader
             <em>could</em> go through the program and fill out the address of every
             library function call, but this would modify lots and lots of code
