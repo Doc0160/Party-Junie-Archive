@@ -6,8 +6,8 @@
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 08:36:31 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 08:36:31 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 08:37:42 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 08:37:42 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -241,7 +241,9 @@ $list = shuffle($list)
 $firstPerson = $list[0]
 $prevPerson = $firstPerson
 for $i in $list {
-	echo $i offre à $prevPerson
+	if $i != $prevPerson {
+		echo $i offre à $prevPerson
+	}
 	$prevPerson = $i
 }
 echo $i offre à $firstPerson
