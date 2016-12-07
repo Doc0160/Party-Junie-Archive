@@ -6,8 +6,8 @@
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 07:59:14 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 07:59:14 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 08:02:11 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 08:02:11 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -19,7 +19,10 @@
   &lt;li&gt;Tirer un premier nom et le mettre dans la colonne “Envoyeur”.&lt;/li&gt;
   &lt;li&gt;Tirer un autre nom et le mettre dans la colonne “Receveur”.&lt;/li&gt;
   &lt;li&gt;Mettre le nom de la colonne “Receveur” dans la colonne “Envoyeur”.&lt;/li&gt;
-  &lt;li&gt;Répéter les étapes &lt;/li&gt;
+  &lt;li&gt;Répéter les étapes 5 à 7 jusqu’à ce qu’il n’y est plus de papier dans la boite.&lt;/li&gt;
+  &lt;li&gt;Mettre le dernier nom de la colonne “Receveur” dans “Envoyeur”&lt;/li&gt;
+  &lt;li&gt;Mettre le nom du tout premier Envoyeur dans la colonne “Receveur”&lt;/li&gt;
+  &lt;li&gt;PROFIT&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 07 Dec 2016 08:52:11 +0100</pubDate>
