@@ -6,16 +6,20 @@
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 07:54:59 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 07:54:59 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 07:59:14 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 07:59:14 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Secret Santa Algorithm</title>
         <description>&lt;ol&gt;
+  &lt;li&gt;Préparer une feuille avec 2 colonnes: “Envoyeur” et “Receveur”&lt;/li&gt;
   &lt;li&gt;Ecrire tous les noms sur des bouts de papier.&lt;/li&gt;
   &lt;li&gt;Mettre tous les papiers dans une boite.&lt;/li&gt;
-  &lt;li&gt;Tirer un premier nom.&lt;/li&gt;
+  &lt;li&gt;Tirer un premier nom et le mettre dans la colonne “Envoyeur”.&lt;/li&gt;
+  &lt;li&gt;Tirer un autre nom et le mettre dans la colonne “Receveur”.&lt;/li&gt;
+  &lt;li&gt;Mettre le nom de la colonne “Receveur” dans la colonne “Envoyeur”.&lt;/li&gt;
+  &lt;li&gt;Répéter les étapes &lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 07 Dec 2016 08:52:11 +0100</pubDate>
