@@ -6,8 +6,8 @@
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 08:24:29 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 08:24:29 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 08:27:00 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 08:27:00 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -19,13 +19,13 @@ Le secret du tirage encourage également, pour les groupes dont les membres ne s
 
 &lt;p&gt;Voici un algorithme permettant de faire une liste de paires:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;```
+&lt;pre&gt;&lt;code&gt;~~~
 	Robert
 	Pierre
 	Alex
 	Melvin
 	Edwige
-```
+~~~
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ol&gt;
