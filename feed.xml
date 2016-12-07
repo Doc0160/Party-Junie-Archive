@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Things</title>
-    <description>Vyaasa is a minimal Jekyll theme meant for writers. Long text posts will look good with this layout. This is a free theme and can be used for all kinds of Jekyll blogs.
+    <description>Things.
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 04:37:41 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 04:37:41 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 04:39:54 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 04:39:54 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
