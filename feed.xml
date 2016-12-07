@@ -6,8 +6,8 @@
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 08:04:37 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 08:04:37 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 08:08:22 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 08:08:22 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -17,7 +17,16 @@ Le tirage au sort est anonyme.
 Souvent pratiquée sur les lieux de travail, dans les familles nombreuses ou entre amis, la participation est généralement volontaire. Elle offre un moyen pour beaucoup d’offrir et de recevoir un cadeau à un coût modéré (au lieu de multiplier les cadeaux, on reçoit un cadeau et on en fait un).
 Le secret du tirage encourage également, pour les groupes dont les membres ne sont pas assez proches, à faire participer les gens, et à rendre ainsi plus facile l’organisation et l’échange de cadeaux.&lt;/p&gt;
 
-&lt;p&gt;Voici un algorithme permettant de faire une liste de paires:&lt;/p&gt;
+&lt;p&gt;Voici un algorithme permettant de faire une liste de paires:
+	&lt;code&gt;
+		test
+	&lt;/code&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Préparer une feuille avec 2 colonnes: “Envoyeur” et “Receveur”&lt;/li&gt;
@@ -29,7 +38,6 @@ Le secret du tirage encourage également, pour les groupes dont les membres ne s
   &lt;li&gt;Répéter les étapes 5 à 7 jusqu’à ce qu’il n’y est plus de papier dans la boite.&lt;/li&gt;
   &lt;li&gt;Mettre le dernier nom de la colonne “Receveur” dans “Envoyeur”&lt;/li&gt;
   &lt;li&gt;Mettre le nom du tout premier Envoyeur dans la colonne “Receveur”&lt;/li&gt;
-  &lt;li&gt;PROFIT&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         <pubDate>Wed, 07 Dec 2016 08:52:11 +0100</pubDate>
