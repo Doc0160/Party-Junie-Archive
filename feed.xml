@@ -6,8 +6,8 @@
 </description>
     <link>https://doc0160.github.io/Things/</link>
     <atom:link href="https://doc0160.github.io/Things/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Dec 2016 08:27:30 +0100</pubDate>
-    <lastBuildDate>Wed, 07 Dec 2016 08:27:30 +0100</lastBuildDate>
+    <pubDate>Wed, 07 Dec 2016 08:36:06 +0100</pubDate>
+    <lastBuildDate>Wed, 07 Dec 2016 08:36:06 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -227,6 +227,25 @@ Le secret du tirage encourage également, pour les groupes dont les membres ne s
   &lt;/li&gt;
   &lt;li&gt;PROFIT&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;Bonus: pseudo-code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$list = {
+	&quot;Robert&quot;
+	&quot;Pierre&quot;
+	&quot;Alex&quot;
+	&quot;Melvin&quot;
+	&quot;Edwige&quot;
+}
+$list = shuffle($list)
+$firstPerson = $list[0]
+$prevPerson = $firstPerson
+for $i in $list {
+	echo $i offre à $prevPerson
+	$prevPerson = $i
+}
+echo $i offre à $firstPerson
+&lt;/code&gt;&lt;/pre&gt;
 </description>
         <pubDate>Wed, 07 Dec 2016 08:52:11 +0100</pubDate>
         <link>https://doc0160.github.io/Things/secret-santa/</link>
